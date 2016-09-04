@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find mmmros)/launch/mmm.launch"/>
+    <param name="mmm/port" value="/dev/ttyACM0"/>
+    <param name="mmm/sensor/active" value="true"/>
+    <node pkg="mmm_teleop" name="teleop_node" type="teleop_node.py" output="screen"/>
+</launch>
